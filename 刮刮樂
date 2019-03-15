@@ -1,0 +1,20 @@
+
+#include <iostream>
+
+using namespace std;//判斷c是否滿足條件,記得數字要從大比到小
+
+int main(int argc, char** argv) {
+int c , N ;
+cin>>c;
+if (c%10%3==2)//當c的個位數為2,8,5時N=N+200
+{N=N+200;
+ } 
+ if (c/10%2!=0)//當c的十位數為奇數時,N=N+100
+{N=N+100;
+}
+if(c/10==c%10)//當c的十位數與個位數相等時,N=N+50
+{N=N+50;
+}
+
+cout<<N ;//輸出最後的總值
+}
