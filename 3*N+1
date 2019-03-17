@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;//使用while迴圈,如果a為基數a=3*a+1一直重複運算直到1出現為止
+如果為偶數a=a/2與上面相同直到一出現為止。
+int main()
+{
+	int a;
+	int c=1;
+	cin>>a;
+	while(a>1)
+	{ if (a%2==1)
+     a=3*a+1;	
+ 	else 
+ 	
+	 if (a%2==0)		
+	a=a/2;
+	c++;
+	}
+	cout<<c;
+}
