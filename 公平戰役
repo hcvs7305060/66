@@ -1,0 +1,27 @@
+#include <iostream>  
+  
+using namespace std; //輸入兩組變數,如果A>B的話輸出"A"和A-B的插值。如果A和B都為0時跳出迴圈 
+  
+int main()  
+{int A,B;  
+
+	while(1)
+	{ 
+		cin>>A>>B;
+		if(A==0&&B==0)break;
+		if(A>B)
+		{
+			A=A-B;
+		 	cout<<"A"<<" "<<A<<endl; 
+		}
+		else if(B>A)
+		{
+			B=B-A;
+			cout<<"B"<<" "<<B<<endl;
+		}
+		else if(A==B)
+		{
+			cout<<0<<endl;
+		}
+	} 
+  }
