@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;//如果c為偶數的話,利用迴圈反覆的除2,直到出現基數為止
+
+int main(int argc, char** argv) {
+int c ;
+cin>>c;
+while (c%2==0)
+ {c=c/2;
+ 
+ }
+cout<<c;
+
+}
